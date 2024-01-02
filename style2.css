@@ -33,12 +33,14 @@ body {
 
 }
 .oops{
-    position: absolute;
     top: 50%;
     margin-left: 10%;
     font-family: 'Rubik Pixels';
     font-size: 700%;
     color: aliceblue;
+}
+.nigga2{
+    position: relative;
 }
 .exist{
     font-family: 'Sevillana';
