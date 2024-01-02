@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Rubik+Doodle+Shadow&family=Rubik+Doodle+Triangles&family=Rubik+Pixels&family=Sevillana&Inter:wght@700&family=Poppins:wght@200;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #404040;
+}
+
+.nigga {
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.error {
+    right: 50%;
+    position: absolute;
+    top: 25%;
+    font-family: 'Rubik Doodle Shadow';
+    font-size: 500%;
+
+}
+
+.E404 {
+    right: 40%;
+    position: absolute;
+    top: 35%;
+    font-family: 'Rubik Doodle Triangles';
+    font-size: 500%;
+
+}
+.oops{
+    position: absolute;
+    top: 50%;
+    margin-left: 10%;
+    font-family: 'Rubik Pixels';
+    font-size: 700%;
+    color: aliceblue;
+}
+.exist{
+    font-family: 'Sevillana';
+    word-wrap: break-word;
+    margin-left: 10%;
+}
+.nf{
+    font-family: 'Anton';
+    word-wrap: break-word;
+    margin-left: 10%;
+}
+ul a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+.navigation {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    margin: 2%;
+}
+ul .port {
+    font-family: 'Inter', sans-serif;
+    margin: 1%;
+}
+ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+ul li {
+    margin: 1%;
+}
+
+
+
+@media screen and (min-width: 1000px){
+    body{
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    ul :nth-child(2){
+        margin-left: 50%;
+    }
+    ul :nth-child(6){
+        margin-top: 1%;
+    }
+    ul :nth-child(7){
+        margin-top: 1%;
+    }
+    ul{
+        margin-top: 0.1%;
+    }
+    .image{
+        height: 120vh;
+        right: 0;
+    }
+}
+.btn{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 1%;
+    width: 10%;
+    margin-left: 10%;
+    border-radius: 5%;
+    margin-top: 1%;
+    font-size: 150%;
+    font-family: 'Sevillana';
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}

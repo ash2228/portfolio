@@ -198,6 +198,9 @@ ul li {
         float: left;
     }
 }
+
+
+
 @media screen and (min-width: 1000px){
     body{
         overflow-y: hidden;
