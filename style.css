@@ -201,7 +201,7 @@ ul li {
 
 
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1500px){
     body{
         overflow-y: hidden;
         overflow-x: hidden;
@@ -214,6 +214,7 @@ ul li {
     }
     ul :nth-child(7){
         margin-top: 1.5%;
+        margin-right: 5%;
     }
     ul{
         margin-top: 0.1%;
@@ -221,5 +222,18 @@ ul li {
     .image{
         height: 120vh;
         right: 0;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1500px){
+    html.body{
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .text,.text2,.text3{
+        font-size: 500%;
+    }
+    .image{
+        bottom: 0;
+        position: relative;
     }
 }
