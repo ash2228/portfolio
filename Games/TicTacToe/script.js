@@ -1,5 +1,8 @@
 let turn = "X";
 let info = document.getElementsByClassName("info")[0]
+let winaud = new Audio("Audio/Suck.mp3");
+let neg = new Audio("Audio/neg.mp3");
+let myu = new Audio("Audio/fd.mp3");
 
 const changeturn = () => {
     let a = Math.floor(Math.random() * 2);
@@ -37,14 +40,17 @@ Array.from(boxes).forEach((element) => {
     let elem = element.querySelector(".h1");
     element.addEventListener("click", () => {
         if (elem.innerText === "" && gameactive == "true") {
+            myu.play()
             elem.innerText = turn;
             turn = changeturn();
             if (checkwin() == "X") {
                 info.innerText = "X is The Winner"
+                winaud.play();
                 gameactive = "false"
             }
             if (checkwin() == "O") {
                 info.innerText = "O is The Winner"
+                neg.play();
                 gameactive = "false"
             }
         }
