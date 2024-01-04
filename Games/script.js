@@ -2,19 +2,19 @@ let turn = "X";
 let info = document.getElementsByClassName("info")[0]
 
 const changeturn = () => {
-    let a = Math.floor(Math.random()*2);
+    let a = Math.floor(Math.random() * 2);
     console.log(a)
-    if(a==1){
-        return("X");
+    if (a == 1) {
+        return ("X");
     }
-    if(a==0){
-        return("O");
+    if (a == 0) {
+        return ("O");
     }
 
 };
 
 const checkwin = () => {
-    let board = document.getElementsByClassName("h1"); // Remove the dot before "h1"
+    let board = document.getElementsByClassName("h1");
     let wins = [
         [0, 1, 2], [3, 4, 5], [6, 7, 8],
         [0, 3, 6], [1, 4, 7], [2, 5, 8],
@@ -25,32 +25,32 @@ const checkwin = () => {
         const [a, b, c] = wins[i];
 
         if (board[a].textContent && board[a].textContent === board[b].textContent && board[a].textContent === board[c].textContent) {
-            return board[a].textContent; // "X" or "O" wins
+            return board[a].textContent;
         }
     }
 
-    return null; // No winner yet
+    return null;
 };
 let gameactive = "true"
-let boxes = document.getElementsByClassName("box"); // Remove the dot before "box"
+let boxes = document.getElementsByClassName("box");
 Array.from(boxes).forEach((element) => {
     let elem = element.querySelector(".h1");
     element.addEventListener("click", () => {
         if (elem.innerText === "" && gameactive == "true") {
-            elem.innerText = turn; // Use assignment (=) instead of equality check (===)
+            elem.innerText = turn;
             turn = changeturn();
-            if(checkwin()=="X"){
+            if (checkwin() == "X") {
                 info.innerText = "X is The Winner"
                 gameactive = "false"
-            } // Update the turn variable
-            if(checkwin()=="O"){
+            }
+            if (checkwin() == "O") {
                 info.innerText = "O is The Winner"
                 gameactive = "false"
-            } // Update the turn variable
+            }
         }
     });
 });
 let form = document.getElementById("myform");
-form.addEventListener("click",()=>{
-    location.reload();
+form.addEventListener("click", () => {
+    location.reload()
 })
