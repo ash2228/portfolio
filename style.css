@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:wght@200;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @keyframes slideIn {
     from {
         opacity: 0;
@@ -119,6 +120,7 @@ ul li {
     word-wrap: break-word;
     position: relative;
     z-index: -5;
+    margin-bottom: 1%;
 }
 
 .text5 {
@@ -132,11 +134,22 @@ ul li {
     font-weight: 400;
     word-wrap: break-word;
 }
+.link:hover{
+    background-color: rgba(128, 128, 128, 0.205);
+}
 
 .link {
     text-decoration-skip-ink: none;
     color: black;
     text-underline-offset: 0.2em;
+    text-decoration: none;
+    padding: 0.2%;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-radius: 30px;
+    border: 2px solid gray;
+    position: relative;
+    margin-left: 3%;
 }
 
 @media screen and (max-width: 768px) {
@@ -159,10 +172,18 @@ ul li {
         position: relative;
     }
 }
+.biege{
+    position: absolute;
+    z-index: -1;
+    background-color:crimson;
+    height: 150vh;
+    margin-top: 5%;
+}
 
 @media screen and (max-width: 480px) {
     body{
-        width: 99vw;
+        /* width: 99vw; */
+        overflow-x: hidden;
     }
     .text2{
         margin-left: 8%;
@@ -196,16 +217,35 @@ ul li {
         width: 99vw;
         top: 120%;
         float: left;
+        position: relative;
+        z-index: 10;
     }
+    .unprof{
+        position: absolute;
+        height: 70vh;
+        right: 0;
+    }
+    #heading{
+        position: absolute;
+        margin: 30%;
+        left: -20%;
+        top: 30%;
+    }
+    .biege{
+        position: relative;
+        width: 100vw;
+        margin-top: 100%;
+    }
+    .para{
+        width: 90%;
+        left: 5%;
+    }
+    
 }
 
 
 
 @media screen and (min-width: 1500px){
-    body{
-        overflow-y: hidden;
-        overflow-x: hidden;
-    }
     ul :nth-child(2){
         margin-left: 50%;
     }
@@ -223,12 +263,16 @@ ul li {
         height: 120vh;
         right: 0;
     }
+    #heading{
+        position: relative;
+    }
+    .para{
+        height: 60vh;
+        width: 50vw;
+        left: 30%;
+    }
 }
 @media only screen and (min-width: 768px) and (max-width: 1500px){
-    html.body{
-        overflow-y: hidden;
-        overflow-x: hidden;
-    }
     .text,.text2,.text3{
         font-size: 500%;
     }
@@ -236,4 +280,20 @@ ul li {
         bottom: 0;
         position: relative;
     }
+
+}
+#heading{
+    font-family: 'Bebas Neue';
+    font-size: 700%;
+    float: right;
+    bottom: 72%;
+    z-index: 3;
+    right: 10%;
+}
+.para{
+    position: absolute;
+    bottom: 15%;
+    z-index: -1;
+    font-size: 250%;
+    border-radius: 15px;
 }
