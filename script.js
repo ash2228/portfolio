@@ -42,20 +42,3 @@ function changeslides() {
   }
 }
 setInterval(changeslides,1000)
-
-setInterval(() => {
-  let run = Math.floor(Math.random()*4)
-  if(run==0){
-    return targ.style.color="yellow";
-  }
-  if(run==1){
-    return targ.style.color="green";
-  }
-  if(run==2){
-    return targ.style.color="blue";
-  }
-  if(run==3){
-    return targ.style.color="black";
-  }
-  console.log(run)
-}, 300);
