@@ -38,6 +38,7 @@ ul a {
 body {
     background-color: #FCF7E4;
     transition: background-color 0.2s ease-in;
+    overflow-x: hidden;
 }
 
 .navigation {
@@ -152,7 +153,7 @@ ul li {
     margin-left: 3%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width:481px) {
     .text3,.text4{
         margin-top: 7%;
         position: relative;
@@ -171,6 +172,21 @@ ul li {
         top: 48%;
         position: relative;
     }
+    .para{
+        height: 20vh;
+        top: 70%;
+    }
+    .biege{
+        width: 150vw;
+    }
+    .unprof{
+        height: 50%;
+    }
+    #heading{
+        margin-top: 0%;
+    }
+
+    
 }
 .biege{
     position: absolute;
@@ -184,6 +200,9 @@ ul li {
     body{
         /* width: 99vw; */
         overflow-x: hidden;
+    }
+    .text{
+        text-align: center;
     }
     .text2{
         margin-left: 8%;
@@ -280,6 +299,27 @@ ul li {
         bottom: 0;
         position: relative;
     }
+    .para{
+        position: absolute;
+        bottom: 15%;
+        z-index: -1;
+        font-size: 250%;
+        border-radius: 15px;
+        height: 30vh;
+        left: 8%;
+    }
+    #heading{
+        top: 38%;
+        left: 50%;
+        position: absolute;
+    }
+    .link{
+        position: absolute;
+        left: 1%;
+    }
+    ul :nth-child(2){
+        margin-left: 20%;
+    }
 
 }
 #heading{
@@ -296,4 +336,16 @@ ul li {
     z-index: -1;
     font-size: 250%;
     border-radius: 15px;
+}
+.biege{
+    width: 100vw;
+    margin-bottom: 0;
+}
+@media only screen and (min-width: 430px) and (max-width: 1000px){
+    .body{
+        overflow-x: hidden;
+    }
+    .unprof{
+        width: 100vw;
+    }
 }
