@@ -14,6 +14,7 @@ function handleIntersection(entries, observer) {
       targ.animate(keyframes, options);
       targ.style.zIndex = '-1';
       // You can also disconnect the observer if you only want to trigger the log once
+      
       observer.disconnect();
     }
   });
