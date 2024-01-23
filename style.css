@@ -349,3 +349,18 @@ ul li {
         width: 100vw;
     }
 }
+
+canvas{
+    position: absolute;
+    top: 250%;
+    z-index: -2;
+}
+.te{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    padding: 10;
+    white-space: nowrap;
+    font-family: 'Poppins';
+}

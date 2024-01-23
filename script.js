@@ -43,3 +43,33 @@ function changeslides() {
   }
 }
 setInterval(changeslides,1000)
+// Check if the screen width is greater than a certain value (e.g., 768 pixels)
+if (window.innerWidth > 768) {
+  // Your code for larger screens here
+  console.log("You are on a larger screen");
+  var newScript = document.createElement('script');
+  newScript.type = 'module';
+  newScript.id = 'can';
+  // Set the source attribute to the URL of the script you want to add
+  newScript.src = './dist/index.22d30fb2.js';
+
+  // Optionally, you can set other attributes like type or async
+  // newScript.type = 'text/javascript';
+  // newScript.async = true;
+  
+
+  // Append the new script element to the body
+  document.body.appendChild(newScript);
+} else {
+  // Your code for smaller screens here
+  console.log("You are on a smaller screen");
+}
+function scrollToBottom(event) {
+  // Prevent the default behavior (page reload)
+  event.preventDefault();
+  // Scroll to the bottom of the page
+  window.scrollTo({
+    top: 10000,
+    behavior: 'smooth' // You can use 'auto' for instant scrolling
+  });
+}
