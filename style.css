@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:wght@200;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @keyframes slideIn {
     from {
         opacity: 0;
@@ -37,6 +38,7 @@ ul a {
 body {
     background-color: #FCF7E4;
     transition: background-color 0.2s ease-in;
+    overflow-x: hidden;
 }
 
 .navigation {
@@ -119,12 +121,13 @@ ul li {
     word-wrap: break-word;
     position: relative;
     z-index: -5;
+    margin-bottom: 1%;
 }
 
 .text5 {
     text-decoration: none;
     color: black;
-    margin: 0 5%;
+    margin: 0 1.8%;
     display: inline;
     color: rgba(84, 84, 84, 0.7);
     font-size: 180%;
@@ -132,14 +135,25 @@ ul li {
     font-weight: 400;
     word-wrap: break-word;
 }
+.link:hover{
+    background-color: rgba(128, 128, 128, 0.205);
+}
 
 .link {
     text-decoration-skip-ink: none;
     color: black;
     text-underline-offset: 0.2em;
+    text-decoration: none;
+    padding: 0.2%;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-radius: 30px;
+    border: 2px solid gray;
+    position: relative;
+    margin-left: 3%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width:481px) {
     .text3,.text4{
         margin-top: 7%;
         position: relative;
@@ -158,11 +172,37 @@ ul li {
         top: 48%;
         position: relative;
     }
+    .para{
+        height: 20vh;
+        top: 70%;
+    }
+    .biege{
+        width: 150vw;
+    }
+    .unprof{
+        height: 50%;
+    }
+    #heading{
+        margin-top: 0%;
+    }
+
+    
+}
+.biege{
+    position: absolute;
+    z-index: -1;
+    background-color:crimson;
+    height: 150vh;
+    margin-top: 5%;
 }
 
 @media screen and (max-width: 480px) {
     body{
-        width: 99vw;
+        /* width: 99vw; */
+        overflow-x: hidden;
+    }
+    .text{
+        text-align: center;
     }
     .text2{
         margin-left: 8%;
@@ -196,16 +236,35 @@ ul li {
         width: 99vw;
         top: 120%;
         float: left;
+        position: relative;
+        z-index: 10;
     }
+    .unprof{
+        position: absolute;
+        height: 70vh;
+        right: 0;
+    }
+    #heading{
+        position: absolute;
+        margin: 30%;
+        left: -20%;
+        top: 30%;
+    }
+    .biege{
+        position: relative;
+        width: 100vw;
+        margin-top: 100%;
+    }
+    .para{
+        width: 90%;
+        left: 5%;
+    }
+    
 }
 
 
 
-@media screen and (min-width: 1000px){
-    body{
-        overflow-y: hidden;
-        overflow-x: hidden;
-    }
+@media screen and (min-width: 1500px){
     ul :nth-child(2){
         margin-left: 50%;
     }
@@ -214,6 +273,7 @@ ul li {
     }
     ul :nth-child(7){
         margin-top: 1.5%;
+        margin-right: 5%;
     }
     ul{
         margin-top: 0.1%;
@@ -222,4 +282,85 @@ ul li {
         height: 120vh;
         right: 0;
     }
+    #heading{
+        position: relative;
+    }
+    .para{
+        height: 60vh;
+        width: 50vw;
+        left: 30%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1500px){
+    .text,.text2,.text3{
+        font-size: 500%;
+    }
+    .image{
+        bottom: 0;
+        position: relative;
+    }
+    .para{
+        position: absolute;
+        bottom: 15%;
+        z-index: -1;
+        font-size: 250%;
+        border-radius: 15px;
+        height: 30vh;
+        left: 8%;
+    }
+    #heading{
+        top: 38%;
+        left: 50%;
+        position: absolute;
+    }
+    .link{
+        position: absolute;
+        left: 1%;
+    }
+    ul :nth-child(2){
+        margin-left: 20%;
+    }
+
+}
+#heading{
+    font-family: 'Bebas Neue';
+    font-size: 700%;
+    float: right;
+    bottom: 72%;
+    z-index: 3;
+    right: 10%;
+}
+.para{
+    position: absolute;
+    bottom: 15%;
+    z-index: -1;
+    font-size: 250%;
+    border-radius: 15px;
+}
+.biege{
+    width: 100vw;
+    margin-bottom: 0;
+}
+@media only screen and (min-width: 430px) and (max-width: 1000px){
+    .body{
+        overflow-x: hidden;
+    }
+    .unprof{
+        width: 100vw;
+    }
+}
+
+canvas{
+    position: absolute;
+    top: 250%;
+    z-index: -2;
+}
+.te{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    padding: 10;
+    white-space: nowrap;
+    font-family: 'Poppins';
 }

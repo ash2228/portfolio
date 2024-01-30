@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Rubik+Doodle+Shadow&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(real.jpg);
+    background-size: cover;
+}
+.box{
+    border: 2px solid white;
+    position: absolute;
+    height: 16vh;
+    width: 10vw;
+}
+.container{
+    display: grid;
+    grid-template-columns: 10% 10% 10%;
+    justify-content: center;
+    position: relative;
+    margin-top: 10%;
+}
+.container .box{
+    position: relative;
+    margin: 0;
+    text-align: center;
+}
+.b{
+    border-bottom: 0;
+}
+.b1{
+    border-top: 0;
+}
+.b2{
+    border-left: 0;
+}
+.b3{
+    border-right: 0;
+}
+.box:hover{
+    background-color: rgba(240, 248, 255, 0.492);
+}
+.h1{
+    font-size: 500%;
+    font-family: 'Fredericka the Great';
+    color: aliceblue;
+}
+.info{
+    position: absolute;
+    color: white;
+    font-family: 'Fredericka the Great';
+    font-size: 500%;
+    left:35%;
+}
+.heading{
+    position: absolute;
+    color: white;
+    font-family: 'Fredericka the Great';
+    top: 0;
+    left: 30%;
+    width: 50%;
+}
+button{
+    background-color: transparent;
+    color: white;
+    width: 10%;
+    font-family: 'Rubik Doodle Shadow';
+    font-size: 150%;
+    left: 45%;
+    position: absolute;
+    top: 90%;
+}
+@media screen and (min-width:100px) and (max-width:900px) {
+    body{
+        overflow: hidden;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: center;
+        position: relative;
+        margin-top: 10%;
+    }
+    .box{
+        position: absolute;
+        height: 16vh;
+        width: 30vw;
+    }
+    .container .box{
+        position: relative;
+        margin: 0;
+        text-align: center;
+    }
+    button{
+        width: 20%;
+    }
+    .heading{
+        position: relative;
+        width: 100vw;
+        left: 0;
+    }
+    .info{
+        font-size: small;
+        position: absolute;
+        top: 83%;
+        left:40%;
+    }
+}

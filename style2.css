@@ -116,3 +116,88 @@ ul li {
     background-color: white;
     color: black;
 }
+@media screen and (max-width: 480px) {
+    html,body{
+        overflow-x: hidden;
+    }
+    body{
+        width: 99vw;
+    }
+    .text2{
+        margin-left: 8%;
+    }
+    .text, .text2{
+        width: 89vw;
+    }
+    .text{
+        margin: 5% ;
+    }
+    ul {
+        flex-direction: column;
+        align-items: center;
+        width: 99vw;
+    }
+    ul a{
+        width: 99vw;
+        font-size: 100%;
+    }
+    .text3,.text4{
+        width: 89vw;
+        margin-top: 4%;
+    }
+
+    .text5 {
+        width: 99vw;
+        margin: 0 3%;
+    }
+
+    .image {
+        width: 99vw;
+        top: 120%;
+        float: left;
+    }
+    .error{
+        margin-top: 40%;
+        left: 20%;
+    }
+    .E404{
+        top: 60%;
+        left: 50%;
+    }
+    .nigga{
+        bottom: 0%;
+        position: relative;
+    }
+    .nigga2{
+        position: absolute;
+        width: 99vw;
+        top: 65%;
+        z-index: -10;
+    }
+    .oops{
+        margin-top: 100%;
+    }
+    .btn{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .text3,.text4{
+        margin-top: 7%;
+        position: relative;
+    }
+    .container {
+        text-align: center;
+        position: relative;
+    }
+
+    .text, .text2, .text3, .text4, .text5 {
+        margin: 10 5%;
+        position: relative;
+    }
+
+    .image {
+        top: 48%;
+        position: relative;
+    }
+}
